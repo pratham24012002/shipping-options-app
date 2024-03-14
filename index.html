@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Options</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main">
+        <div class="main-container">
+
+            <div class="title ">
+                Shipping
+            </div>
+            
+            <div class="cost-panel clearfix">
+                <div id="helpGuide">
+                    <button id="close-help-guide" class="help-guide">x</button>
+                    <p>
+                        Step 1. Select Shipping Service <br>
+                        Step 2.Enter COST of shipment <br>
+                        Step 3.Enter ADDITIONAL COST,the amount to charge for shipping this item if combined with other purchases
+                    </p>
+                    <p>Notes:</p>
+                    <ul>
+                        <li>Enter 0 under Cost to indicate free shipping.</li>
+                        <li>enter 0 under Additional Cost to indicate free shipping of this item when combined with other purchases.</li>
+                        <li>When a buyer purchases multiple items,the listing with the highest initial ahipping COST is used as the base shipping cost with the ADDITIONAL COST added according to each combined item. </li>
+                    </ul>
+                </div>
+
+    
+                <div class="shipping-container" id="shippingContain">
+                    <div  class="shipping-type view ">
+                        <select  id="selectShipping" class="area"">
+                            <option value="">Select Shipping</option>
+                        </select>
+                    </div>
+                    
+                    <div  class="cost-input view ">
+                        <span class="input-cost logo">$</span>
+                        <input type="text" id="Cost" placeholder="Cost" autocomplete="off" class="area" required >
+                        
+                    </div>
+
+
+                    <div  class="addtional-cost view ">
+                        <span class="addional-cost logo">$</span>
+                        <input type="text" id="additional" placeholder="Addtional Cost" class="area">
+                    </div>
+    
+                    <div   class="button-grp view ">
+                        <button id="bt1" class="add btn " >Add</button>
+                    </div>
+                </div>
+                <button id="guide" class="help btn help-guide" >?</button>
+
+                <p id="error" style="color: red;"></p>       
+
+                <div id="display"></div>
+                
+
+            </div>
+           
+        </div>
+    </div>
+
+    <script src="list.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>

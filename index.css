@@ -1,0 +1,222 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #8aa2b7;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.main-container{
+    background-color: white;
+    width: 65vw;
+    margin: 0 auto;
+    margin-top: 6rem;
+    border-radius: 3px;
+    box-shadow: 5px;
+}
+
+
+
+/* to display an element in inline */
+
+.view{
+    display: inline-block;
+}
+
+
+.cost-panel,.title{
+    padding: 13px 30px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+
+}
+
+
+
+.title{
+    font-weight: bold;
+    font-family: roboto,sans-serif;
+}
+
+
+/* css of title-shipping */
+
+.main .title{
+    border-bottom: 1px solid transparent;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+
+.main .cost-panel{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+
+
+/* css of dollar logo */
+
+.logo{
+    background-color: #eeeeee;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border-bottom-right-radius: 1px;
+    border-top-right-radius: 1px;
+}
+
+/* css of select and input element */
+
+.area{
+    background-color: white;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    margin-left: -6px;
+    border-radius: 4px;
+    border-bottom-left-radius: 1px;
+    border-top-left-radius: 1px;
+}
+
+/* css of button */
+
+.btn{
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    padding:5px ;
+}
+
+
+
+.btn:hover{
+    background-color: #ccc;
+
+}
+
+
+/* css of Add Button */
+
+.button-grp .add{
+    padding: 6px 10px;
+    position: relative;
+    top:-1px
+}
+
+
+/* css of help guide container */
+
+#helpGuide{
+    background-color: #d9edf7;
+    margin-top: 5px;
+    padding: 10px;
+    border-color: #bce8f1;
+    margin-bottom: 19px;
+    animation: showMe 3s forwards;
+    transition: opacity 0.5s;
+    opacity: 0;
+}
+@keyframes showMe{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+/* css of close button inside the helpguide */
+
+#close-help-guide{
+    float: right;
+    background-color: gray;
+    border: 0px solid transparent;
+    position: relative;
+    right: 7px;
+    top: 5px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+
+.shipping-container{
+    display: inline-block;
+}
+
+.formerror{
+    color: red;
+}
+
+/* select option:first-of-type {
+    display: none;
+  } */
+
+  /* css of option is added by clicking on add button by user */
+
+  .detail{
+    float: left;
+    clear: both;
+    margin-top: 20px;
+    padding: 10px;
+    line-height: 1;
+    color: #fff;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 4px;
+    background-color: #337ab7;
+}
+
+/* css of remove button */
+
+.detail .btn1{
+    padding: 11px;
+    background-color: #fff;;
+    border: 1px solid black;
+    float: right;
+    margin-left: 4px;
+    border-radius: 4px;
+    color: #333;;
+    line-height: 1px;
+    font-size: 13px;
+    cursor: pointer;
+    position: relative;
+    bottom: 4px;
+    font-weight: bold;
+}
+
+
+.myStyle{
+    border-color: #b94a48;
+    box-shadow: rgba(0, 0, 0, 0.075);
+    background-color: #f2dede;
+}
+
+.display{
+    background-color: blue;
+    padding: 15px;
+    margin: 15px 0px;
+    border-radius: 20px;
+    float: left;
+    clear: both;
+    color: white;
+}
+
+.remove-btn{
+    padding: 5px;
+    color: black;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+
